@@ -47,6 +47,8 @@ const Counsellors = () => {
                 reason: note || "Free counselling support request",
             });
 
+            console.log(response)
+
             if (response?.success && response?.data?.appointment?._id) {
                 pushToast("Your private chat room is ready.", "success");
                 setSelectedCounsellor(null);
