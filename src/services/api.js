@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "https://mannsathi-backend.onrender.com:3000/api",
+    baseURL: "https://mannsathi-backend.onrender.com/api",
     withCredentials: true,
 });
 

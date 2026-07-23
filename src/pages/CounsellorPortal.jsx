@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import { MessageBubble } from "../components/ChatComponents";
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://mannsathi-backend.onrender.com:3000/api", withCredentials: true });
+const API = axios.create({ baseURL: "https://mannsathi-backend.onrender.com/api", withCredentials: true });
 
 // Utility function to decode JWT
 const decodeJWT = (token) => {

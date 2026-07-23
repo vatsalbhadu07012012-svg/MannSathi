@@ -7,7 +7,7 @@ import { MessageBubble, getMessageOwnership } from "../components/ChatComponents
 import socketService from "../services/socketService";
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://mannsathi-backend.onrender.com:3000/api", withCredentials: true });
+const API = axios.create({ baseURL: "https://mannsathi-backend.onrender.com/api", withCredentials: true });
 
 const CounsellorChatPage = () => {
     const { appointmentId } = useParams();

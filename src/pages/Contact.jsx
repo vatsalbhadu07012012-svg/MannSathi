@@ -33,7 +33,7 @@ const Contact = () => {
 
         setLoading(true);
         try {
-            await axios.post("https://mannsathi-backend.onrender.com:3000/api/contact", formData, { withCredentials: true });
+            await axios.post("https://mannsathi-backend.onrender.com/api/contact", formData, { withCredentials: true });
             setSubmitted(true);
             setFormData({ fullName: "", email: "", subject: "", message: "" });
             pushToast("Thanks for reaching out. We will be in touch soon.", "success");
